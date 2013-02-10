@@ -38,10 +38,15 @@ public class Application extends Controller {
 		return localUser;
 	}
 
-	@Restrict(@Group(Application.USER_ROLE))
 	public static Result restricted() {
-		final User localUser = getLocalUser(session());
-		return ok(restricted.render(localUser));
+        final User localUser = getLocalUser(session());
+        
+        if (localUser == null) {
+            PlayAuthenticate.storeOriginalUrl(ctx());
+            return redirect(routes.Application.signup());
+        } else {
+            return ok(restricted.render(localUser));
+        }
 	}
 
 	@Restrict(@Group(Application.USER_ROLE))
