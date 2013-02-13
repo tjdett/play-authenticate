@@ -1,1 +1,11 @@
 1.sql
+samples/java/play-authenticate-simple-oauth/bin
+samples/java/play-authenticate-simple-oauth/project/project/target
+samples/java/play-authenticate-simple-oauth/project/target
+samples/java/play-authenticate-simple-oauth/target
+samples/java/play-authenticate-simple-oauth/.target
+samples/java/play-authenticate-simple-oauth/.classpath
+samples/java/play-authenticate-simple-oauth/.project
+samples/java/play-authenticate-simple-oauth/.settings/org.eclipse.core.resources.prefs
+samples/java/play-authenticate-simple-oauth/.settings/org.scala-ide.sdt.core.prefs
+samples/java/play-authenticate-simple-oauth/logs
